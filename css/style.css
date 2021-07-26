@@ -1,0 +1,478 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+.container
+{
+    margin: auto;
+    width: 95%;
+}
+/* start of navbar */
+nav
+{
+   position: absolute;
+   width: 100%;
+    z-index: 3;
+    background-color: transparent;
+}
+nav .container
+{
+    overflow: hidden;
+}
+nav .container h2
+{
+    margin-top: 17px;
+}
+nav .container ul
+{
+    display: inline-block;
+    margin: 20px;
+}
+nav .container ul li
+{
+    display: inline-block;
+    margin: 0 15px ;
+}
+nav .container ul li:hover
+{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1abc9c;
+}
+nav .container ul li a
+{
+    color: #FFF;
+}
+
+/* end of navbar */
+/* start of header */
+header
+{
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+header .heading 
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+header .heading  h1
+{
+    color: #FFF;
+    font-size: 3em;
+    word-spacing: 5px;
+   
+}
+header .heading p{
+    color: #FFF;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1em;
+}
+/* end of header */
+/* start of services */
+
+main .container
+{
+    border-bottom:2px solid #CCC;
+}
+main .container> h2
+{
+    margin-bottom: 2.5em;
+    position: relative;
+}
+main .container> h2::before
+{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 110%;
+    width: 4%;
+    height: 2px;
+    background-color: #1abc9c;
+    transition: width 1s ease-in-out;
+}
+main .container> h2:hover::before
+{
+    width: 12.6%;
+}
+main .container div
+{
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    overflow: auto;
+    margin-bottom: 3em;
+}
+main .container div i{
+    width: 20%;
+    font-size:2.5em;
+    line-height: 1.2;
+}
+main .container div section
+{
+    width: 77%;
+    padding-left: 3%;
+}
+main .container div section> h2
+{
+    margin-bottom: .5em;
+}
+main .container div section p{
+    line-height: 1.6;
+    font-weight: 400;
+    color: #a7a7a7;
+}
+/* end of services */
+/* startof team section */
+.team
+{
+    overflow: auto;
+}
+.team .container> h2
+{
+    margin-bottom: 2.5em;
+    position: relative;
+}
+.team .container> h2::before
+{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 110%;
+    width: 4%;
+    height: 2px;
+    background-color: #1abc9c;
+    transition: width 1s ease-in-out;
+}
+.team .container> h2:hover::before
+{
+    width: 10%;
+}
+.team .container p
+{
+    width: 40%;
+    color: #a7a7a7;
+    
+}
+.team .container aside
+{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+.team .container aside figure
+{
+    width: 23%;
+    margin-right: 2%;
+    height: 22vh;
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+.team .container aside figure .layer
+{
+    background-color: #1abc9c;
+    opacity: 0.6;
+    border-radius: 5%;
+}
+.team .container aside figure:hover .layer
+{
+    animation: square 5s ease-in-out 1;
+}
+.team .container aside figure:hover span
+{
+    visibility: hidden;
+}
+.team .container aside figure span
+{
+    position: absolute;
+    z-index: 8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5%;
+    padding: 3% 6%;
+}
+.team .container aside figure img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+/* end of team section */
+/* start of feadback section */
+.feadback
+{
+    background: url(../images/feadback.jpg);
+    background-size: cover;
+    height: 45vh;
+    position: relative;
+}
+.feadback h2
+{
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    z-index: 4;
+    padding-top:5% ;
+}
+/* end of feadback section */
+/* start of project section */
+.project
+{
+    perspective: 300px;
+}
+.project .container> h2
+{
+    margin-bottom: 2.5em;
+    position: relative;
+}
+.project .container> h2::before
+{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 110%;
+    width: 4%;
+    height: 2px;
+    background-color: #1abc9c;
+    transition: width 1s ease-in-out;
+}
+.project .container> h2:hover::before
+{
+    width: 10%;
+}
+.project .container ul
+{
+    margin-bottom: 5%;
+}
+.project .container ul li
+{
+    display: inline-block;
+    border: 2px solid #99999978;
+    color: #a7a7a7;
+    padding: .7% 2%;
+    margin-right: 1%;
+}
+.project .container ul li:hover
+{
+    background-color: #1abc9c;
+    color: #FFF;
+    border: none;
+}
+.project .container figure
+{
+    display:inline-block;
+}
+.project .container figure img
+{
+    width: 30%;
+    margin:2% 2% 2% 0;
+    height:35vh;
+    border-radius: 3%;
+    filter: grayscale(60%);
+    transition: all ease-in-out .7s;
+}
+.project .container figure img:hover
+{
+    transform: translateZ(15px);
+    filter: grayscale(0);
+}
+/* end of prioject section */
+/* start of footer */
+footer
+{
+    background: #000;
+    overflow: hidden;
+    perspective: 300px;
+}
+footer .container div
+{
+    width: 22%;
+    margin-right:1% ;
+    float: left;
+    color: #FFF;
+}
+footer .container  h3
+{
+    padding-top: 3.5em;
+    display:block;
+}
+footer .container .aboutClassic h3,
+footer .container .aboutClassic p,
+footer .container .aboutClassic span
+{
+    color:#FFF;
+}
+footer .container .aboutClassic p
+{
+    margin-bottom: 35px ;
+    color: #a7a7a7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+footer .container  ul li
+{
+    display: inline-block;
+    margin-right: 4px;
+}
+footer .container .aboutClassic ul li i
+{
+    color: #FFF;
+    border: 1px solid;
+    width: 19px;
+    padding: 8px 6px 8px 9px;
+    font-size: 14px;
+}
+footer .container .aboutClassic span
+{
+    display: inline-block;
+    font-size: 13px;
+    font-weight:800 ;
+    margin-top: 1.5em;
+    color: #a7a7a7;
+}
+footer .container .tage
+{
+    color: #FFF;
+}
+footer .container  h3
+{
+    margin-bottom: 45px;
+}
+footer .container .tage ul li
+{
+    padding: 4px 10px;
+    border: 1px solid #f7f7f7;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #a7a7a7;
+    font-weight: bold;
+}
+footer .container .post figure
+{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+footer .container .post figure p
+{
+    font-size: 14px;
+    display: inline-block;
+    width: 60%;
+    padding-top: 13px;
+    color: #f7f7f7;
+}
+footer .container .post figure p span
+{
+    color: #ccc;
+}
+footer .container .blog ul li
+{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0 ;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d4cdcd;
+}
+footer .container ul li:hover
+{
+    transition: all .5s ease-in-out;
+    transform: translateZ(4px);
+}
+/* end of footer */
+/* start of framework */
+.fl-left
+{
+    float: left;
+}
+.fl-right
+{
+    float: right;
+}
+.main-color
+{
+    color: #1abc9c;
+}
+.margin-bottom
+{
+    margin-bottom: 7em;
+}
+.pointer
+{
+    cursor: pointer;
+}
+.layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(0,0,0);
+    opacity: .7;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+/* end of framework */
+@media (max-width: 1200px)
+{
+    main .container div
+    {
+        width: 46%;
+    }
+}
+@keyframes square
+{
+    0%
+    {
+        width: 20%;
+        height: 20%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    25%
+    {
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    75%
+    {
+        width: 80%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
